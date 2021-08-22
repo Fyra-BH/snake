@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "/usr/include/newlib/sys/select.h"
+#include "sys/select.h"
 
 #define TTY_PATH            "/dev/tty"
 #define STTY_US             "stty raw -echo -F "
@@ -14,6 +14,5 @@
 
 int control_init();
 int get_char();
-void contorl(char ch);
 
 #endif
